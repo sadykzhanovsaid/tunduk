@@ -1,12 +1,12 @@
 import React from "react"
 import "./App.css"
 
+import Layout from "./Layout/Layout.jsx"
+
 function App() {
     return (
         <>
-            <div className="container">
-                Түндүк
-            </div>
+            <Layout/>
         </>
     )
 }
