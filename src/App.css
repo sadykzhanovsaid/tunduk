@@ -1,0 +1,24 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    max-width: 480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #bcddff;
+}
