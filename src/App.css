@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
     margin: 0;
@@ -10,6 +11,8 @@
     outline: none;
     user-select: none;
 
+    font-family: "Ubuntu", sans-serif;
+
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -21,4 +24,8 @@
 
 body {
     background-color: #bcddff;
+}
+
+body.is-webapp .application {
+    padding: 60px 0;
 }
