@@ -6,7 +6,7 @@ function Layout() {
 
     return (
         <>
-            Түндүк
+            <p className="title">Tunduk</p>
 
             <Outlet/>
         </>
