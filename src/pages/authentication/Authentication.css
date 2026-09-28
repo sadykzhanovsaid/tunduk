@@ -12,7 +12,7 @@
 
 .authentication__title {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
     color: #2c5eaf;
 
     text-align: center;
@@ -26,8 +26,8 @@
 }
 
 .authentication__pin {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 
     border: 2px solid #2c5eaf;
     border-radius: 50%;
