@@ -43,18 +43,18 @@ function Authentication({onLogin}) {
                                 <button className="authentication__number" tabIndex="3">3</button>
                             </div>
                             <div className="authentication__numbers-row2">
-                                <button className="authentication__number">4</button>
-                                <button className="authentication__number">5</button>
-                                <button className="authentication__number">6</button>
+                                <button className="authentication__number" tabIndex="4">4</button>
+                                <button className="authentication__number" tabIndex="5">5</button>
+                                <button className="authentication__number" tabIndex="6">6</button>
                             </div>
                             <div className="authentication__numbers-row3">
-                                <button className="authentication__number">7</button>
-                                <button className="authentication__number">8</button>
-                                <button className="authentication__number">9</button>
+                                <button className="authentication__number" tabIndex="7">7</button>
+                                <button className="authentication__number" tabIndex="8">8</button>
+                                <button className="authentication__number" tabIndex="9">9</button>
                             </div>
                             <div className="authentication__numbers-row4">
-                                <button className="authentication__number">0</button>
-                                <button className="authentication__number"><RiDeleteBack2Line fontSize="32px"/></button>
+                                <button className="authentication__number" tabIndex="0">0</button>
+                                <button className="authentication__number" tabIndex="10"><RiDeleteBack2Line fontSize="32px"/></button>
                             </div>
                         </div>
 
