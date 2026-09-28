@@ -83,10 +83,16 @@
     color: #0b60ba;
 
     background-color: white;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.01);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.01);
+
+    transition: all 0.3s ease;
 
     & > svg {
         transform: translateY(2px);
+    }
+
+    &:active {
+        background-color: #d7e9fd;
     }
 }
 
