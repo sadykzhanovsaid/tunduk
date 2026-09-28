@@ -26,8 +26,8 @@
 }
 
 .authentication__pin {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
 
     border: 2px solid #2c5eaf;
     border-radius: 50%;
@@ -71,14 +71,17 @@
 }
 
 .authentication__number {
-    width: 85px;
-    height: 85px;
+    width: 100px;
+    height: 100px;
 
     border-radius: 50%;
 
     font-weight: 600;
     font-size: 26px;
     color: #2c5eaf;
+
+    background-color: white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 
     & > svg {
         transform: translateY(2px);
