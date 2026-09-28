@@ -2,38 +2,35 @@ import React, {useState} from "react"
 import "./Authentication.css"
 import {useNavigate} from "react-router-dom"
 
-function Authentication() {
-    const [pin, setPin] = useState("")
+function Authentication({onLogin}) {
+    const [password, setPassword] = useState("")
     const navigate = useNavigate()
 
-    const correctPin = "1234"
+    const handleSubmit = (e) => {
+        e.preventDefault()
 
-    const handleSubmit = () => {
-        if (pin === correctPin) {
-            sessionStorage.setItem("unlocked", "true")
-            navigate("/")
+        if (password === "1234") { // Ваш пароль
+            sessionStorage.setItem("isAuthenticated", "true")
+            onLogin() // Обновляем состояние в App.jsx
+            navigate("/", { replace: true })
         } else {
-            setPin("")
-            alert("Неверный PIN")
+            alert("Неверный пароль")
+            setPassword("")
         }
     }
 
     return (
         <main className="authentication">
-            <div className="lock-screen">
-                <h1>Введите PIN</h1>
-
+            <form onSubmit={handleSubmit}>
                 <input
                     type="password"
-                    value={pin}
-                    onChange={(e) => setPin(e.target.value)}
-                    maxLength={4}
+                    placeholder="Введите пароль"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    autoFocus
                 />
-
-                <button onClick={() => handleSubmit()}>
-                    Войти
-                </button>
-            </div>
+                <button type="submit">Войти</button>
+            </form>
         </main>
     );
 }
