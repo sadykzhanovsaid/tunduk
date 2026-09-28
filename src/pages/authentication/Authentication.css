@@ -1,7 +1,7 @@
 .authentication__box {
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 55px;
 }
 
 .authentication__top {
