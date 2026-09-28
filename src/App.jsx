@@ -1,9 +1,10 @@
 import React, {useEffect} from "react"
 import "./App.css"
-import {Route, Routes} from "react-router-dom"
+import {Navigate, Route, Routes} from "react-router-dom"
 
 import Layout from "./Layout/Layout.jsx"
 import Home from "./pages/home/Home.jsx"
+import Authentication from "./pages/authentication/Authentication.jsx"
 
 function App() {
 
@@ -17,10 +18,17 @@ function App() {
         }
     }, [])
 
+    const isUnlocked = sessionStorage.getItem("unlocked") === "true"
+
     return (
         <div className="application">
             <Routes>
-                <Route path="/" element={<Layout/>}>
+                <Route
+                    path="/lock"
+                    element={<Authentication/>}
+                />
+
+                <Route path="/" element={isUnlocked ? <Layout/> : <Navigate to="/lock" replace/>}>
                     <Route index element={<Home/>}/>
                 </Route>
             </Routes>
