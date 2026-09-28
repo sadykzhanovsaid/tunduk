@@ -65,7 +65,6 @@ function Authentication({onLogin}) {
                     </div>
                 </div>
             </div>
-            {/*<img src="/photo_2026-09-28_22-05-20.jpg" alt=""/>*/}
         </div>
     );
 }

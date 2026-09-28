@@ -15,7 +15,7 @@
 .authentication__title {
     font-weight: 500;
     font-size: 18px;
-    color: #2c5eaf;
+    color: #0b60ba;
 
     text-align: center;
 }
@@ -31,7 +31,7 @@
     width: 22px;
     height: 22px;
 
-    border: 2px solid #2c5eaf;
+    border: 2px solid #0b60ba;
     border-radius: 50%;
 }
 
@@ -80,7 +80,7 @@
 
     font-weight: 600;
     font-size: 26px;
-    color: #2c5eaf;
+    color: #0b60ba;
 
     background-color: white;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.01);
@@ -101,11 +101,12 @@
 .authentication__forgot {
     font-weight: 400;
     font-size: 16px;
-    color: dimgrey;
+    color: #465463;
 }
 
 .authentication__recovery {
     font-weight: 600;
     font-size: 16px;
-    color: #2c5eaf;
+    /*color: #2c5eaf;*/
+    color: #0b60ba;
 }
