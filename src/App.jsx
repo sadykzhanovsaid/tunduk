@@ -24,7 +24,6 @@ function App() {
     return (
         <div className="application">
             <Routes>
-                {/* Если уже авторизован — редиректим с /lock на главную, иначе показываем форму */}
                 <Route
                     path="/lock"
                     element={
@@ -36,7 +35,6 @@ function App() {
                     }
                 />
 
-                {/* Защищенный маршрут */}
                 <Route
                     path="/"
                     element={isAuthenticated ? <Layout /> : <Navigate to="/lock" replace />}
@@ -44,7 +42,6 @@ function App() {
                     <Route index element={<Home />} />
                 </Route>
 
-                {/* Все остальные пути */}
                 <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/lock"} replace />} />
             </Routes>
         </div>

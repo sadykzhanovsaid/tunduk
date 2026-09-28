@@ -1,0 +1,106 @@
+.authentication__box {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.authentication__top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.authentication__title {
+    font-weight: 500;
+    font-size: 22px;
+    color: #2c5eaf;
+
+    text-align: center;
+}
+
+.authentication__pins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.authentication__pin {
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #2c5eaf;
+    border-radius: 50%;
+}
+
+.authentication__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.authentication__numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.authentication__numbers-row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.authentication__numbers-row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.authentication__numbers-row3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.authentication__numbers-row4 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.authentication__number {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    font-weight: 600;
+    font-size: 26px;
+    color: #2c5eaf;
+
+    & > svg {
+        transform: translateY(2px);
+    }
+}
+
+.authentication__other {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.authentication__forgot {
+    font-weight: 400;
+    font-size: 18px;
+    color: dimgrey;
+}
+
+.authentication__recovery {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c5eaf;
+}
