@@ -40,7 +40,6 @@ function Authentication({onLogin}) {
                             <div className="authentication__numbers-row1">
                                 <button className="authentication__number" onClick={(e) => {
                                     setPassword(prev => prev += "1")
-                                    e.currentTarget.blur()
                                 }}
                                         tabIndex="1">1
                                 </button>

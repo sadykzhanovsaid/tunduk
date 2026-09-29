@@ -91,7 +91,7 @@
         transform: translateY(2px);
     }
 
-    &:focus {
+    &:active {
         animation: clickEffect 0.3s ease;
     }
 }
