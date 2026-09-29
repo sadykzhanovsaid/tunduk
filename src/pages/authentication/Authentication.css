@@ -33,6 +33,12 @@
 
     border: 2px solid #0b60ba;
     border-radius: 50%;
+
+    transition: all 0.1s ease;
+
+    &.active {
+        background-color: #0b60ba;
+    }
 }
 
 .authentication__bottom {
@@ -91,7 +97,7 @@
         transform: translateY(2px);
     }
 
-    &:active {
+    &.is-clicked {
         animation: clickEffect 0.3s ease;
     }
 }
