@@ -43,3 +43,16 @@ body.is-webapp .application {
         display: none;
     }
 }
+
+@media screen and (orientation: landscape) and (max-width: 480px) {
+    html, body {
+        width: 100vh !important;
+        height: 100vw !important;
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        overflow-x: hidden;
+    }
+}
