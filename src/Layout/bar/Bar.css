@@ -26,6 +26,11 @@
     flex-direction: column;
     align-items: center;
     gap: 2px;
+
+    &.active > .bar__title {
+        font-weight: 600;
+        color: #0b60ba;
+    }
 }
 
 .bar__title {

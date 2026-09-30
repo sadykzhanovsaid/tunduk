@@ -1,27 +1,28 @@
 import React from "react"
 import "./Bar.css"
+import {NavLink} from "react-router-dom"
 
 function Bar() {
     return (
         <div className="bar">
             <div className="container">
                 <div className="bar__box">
-                    <div className="bar__link">
+                    <NavLink to="/" className="bar__link">
                         <div className="bar__icon"></div>
                         <p className="bar__title">Главная</p>
-                    </div>
-                    <div className="bar__link">
+                    </NavLink>
+                    <NavLink to="/document" className="bar__link">
                         <div className="bar__icon"></div>
                         <p className="bar__title">Документы</p>
-                    </div>
-                    <div className="bar__link">
+                    </NavLink>
+                    <NavLink to="/other" className="bar__link">
                         <div className="bar__icon"></div>
                         <p className="bar__title">Услуги</p>
-                    </div>
-                    <div className="bar__link">
+                    </NavLink>
+                    <NavLink to="/user" className="bar__link">
                         <div className="bar__icon"></div>
                         <p className="bar__title">Профиль</p>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
         </div>
