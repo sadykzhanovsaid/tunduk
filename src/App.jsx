@@ -14,6 +14,18 @@ function App() {
     })
 
     useEffect(() => {
+        const isAuthPage = !isAuthenticated || location.pathname === "/lock"
+
+        if (isAuthPage) {
+            document.body.classList.add("authentication")
+            document.body.classList.remove("app")
+        } else {
+            document.body.classList.add("app")
+            document.body.classList.remove("authentication")
+        }
+    }, [isAuthenticated, location.pathname])
+
+    useEffect(() => {
         setCurrentPage(location.pathname)
     }, [location.pathname])
 

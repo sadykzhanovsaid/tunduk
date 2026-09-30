@@ -23,11 +23,19 @@
 }
 
 body {
-    background-color: #d7e9fd;
+
+    &.app {
+        background-color: #d7e9fd;
+    }
+
+    &.authentication {
+        background-color: #cde6fd;
+    }
 }
 
 body.is-webapp .application {
     padding: 60px 0;
+
 }
 
 .application {
