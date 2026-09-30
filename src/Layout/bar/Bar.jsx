@@ -32,7 +32,7 @@ function Bar({currentPage,setCurrentPage}) {
                         <p className="bar__title">Услуги</p>
                     </NavLink>
                     <NavLink to="/user" className="bar__link">
-                        {currentPage === "user" ? <FaCircleUser/> : <FaRegCircleUser/>}
+                        {currentPage === "/user" ? <FaCircleUser/> : <FaRegCircleUser/>}
                         <p className="bar__title">Профиль</p>
                     </NavLink>
                 </div>

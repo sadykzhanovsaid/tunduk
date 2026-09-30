@@ -35,6 +35,10 @@
         font-size: 24px;
     }
 
+    &:last-child > svg {
+        font-size: 23px;
+    }
+
     &.active > .bar__title {
         font-weight: 500;
         font-size: 12px;
@@ -45,6 +49,8 @@
         color: #0b60ba;
     }
 }
+
+
 
 .bar__title {
     font-weight: 400;
