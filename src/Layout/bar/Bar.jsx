@@ -15,7 +15,7 @@ function Bar() {
                         <div className="bar__icon"></div>
                         <p className="bar__title">Документы</p>
                     </NavLink>
-                    <NavLink to="/other" className="bar__link">
+                    <NavLink to="/services" className="bar__link">
                         <div className="bar__icon"></div>
                         <p className="bar__title">Услуги</p>
                     </NavLink>

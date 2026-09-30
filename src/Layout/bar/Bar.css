@@ -6,6 +6,8 @@
 }
 
 .bar__box {
+    z-index: 100;
+
     padding: 14px 20px 12px;
 
     width: 100%;
@@ -22,13 +24,15 @@
 }
 
 .bar__link {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2px;
 
     &.active > .bar__title {
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 12px;
         color: #0b60ba;
     }
 }

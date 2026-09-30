@@ -40,6 +40,9 @@ function App() {
                     element={isAuthenticated ? <Layout /> : <Navigate to="/lock" replace />}
                 >
                     <Route index element={<Home />} />
+                    <Route path="/document" element={<p>document</p>} />
+                    <Route path="/services" element={<p>services</p>} />
+                    <Route path="/user" element={<p>user</p>} />
                 </Route>
 
                 <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/lock"} replace />} />
