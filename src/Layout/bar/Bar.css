@@ -6,7 +6,7 @@
 }
 
 .bar__box {
-    padding: 15px 20px;
+    padding: 10px 20px;
 
     width: 100%;
 
@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: space-between;
 
-    border-radius: 32px;
+    border-radius: 26px;
     background-color: white;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
@@ -36,5 +36,6 @@
     width: 24px;
     height: 24px;
 
+    border-radius: 6px;
     background-color: #0b60ba;
 }
