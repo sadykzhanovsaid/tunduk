@@ -30,9 +30,18 @@
     align-items: center;
     gap: 2px;
 
+    & > svg {
+        color: #465463;
+        font-size: 20px;
+    }
+
     &.active > .bar__title {
         font-weight: 500;
         font-size: 12px;
+        color: #0b60ba;
+    }
+
+    &.active > svg {
         color: #0b60ba;
     }
 }
@@ -41,11 +50,4 @@
     font-weight: 400;
     font-size: 12px;
     color: #465463;
-}
-
-.bar__icon {
-    width: 18px;
-    height: 18px;
-
-    border-radius: 6px;
 }

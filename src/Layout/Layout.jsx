@@ -4,13 +4,13 @@ import {Outlet} from "react-router-dom"
 
 import Bar from "./bar/Bar.jsx"
 
-function Layout() {
+function Layout({currentPage, setCurrentPage}) {
 
     return (
         <>
             <Outlet/>
 
-            <Bar/>
+            <Bar currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         </>
     );
 }

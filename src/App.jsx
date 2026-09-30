@@ -1,15 +1,21 @@
 import React, {useEffect, useState} from "react"
 import "./App.css"
-import {Route, Routes, Navigate} from "react-router-dom"
+import {Navigate, Route, Routes, useLocation} from "react-router-dom"
 
 import Layout from "./Layout/Layout.jsx"
 import Home from "./pages/home/Home.jsx"
 import Authentication from "./pages/authentication/Authentication.jsx"
 
 function App() {
+    const location = useLocation()
+    const [currentPage, setCurrentPage] = useState(location.pathname)
     const [isAuthenticated, setIsAuthenticated] = useState(() => {
         return sessionStorage.getItem("isAuthenticated") === "true"
     })
+
+    useEffect(() => {
+        setCurrentPage(location.pathname)
+    }, [location.pathname])
 
     useEffect(() => {
         const isStandalone = window.matchMedia("(display-mode: standalone)").matches ||
@@ -28,24 +34,24 @@ function App() {
                     path="/lock"
                     element={
                         isAuthenticated ? (
-                            <Navigate to="/" replace />
+                            <Navigate to="/" replace/>
                         ) : (
-                            <Authentication onLogin={() => setIsAuthenticated(true)} />
+                            <Authentication onLogin={() => setIsAuthenticated(true)}/>
                         )
                     }
                 />
 
                 <Route
                     path="/"
-                    element={isAuthenticated ? <Layout /> : <Navigate to="/lock" replace />}
+                    element={isAuthenticated ? <Layout currentPage={currentPage} setCurrentPage={setCurrentPage}/> : <Navigate to="/lock" replace/>}
                 >
-                    <Route index element={<Home />} />
-                    <Route path="/document" element={<p>document</p>} />
-                    <Route path="/services" element={<p>services</p>} />
-                    <Route path="/user" element={<p>user</p>} />
+                    <Route index element={<Home/>}/>
+                    <Route path="/document" element={<p>document</p>}/>
+                    <Route path="/services" element={<p>services</p>}/>
+                    <Route path="/user" element={<p>user</p>}/>
                 </Route>
 
-                <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/lock"} replace />} />
+                <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/lock"} replace/>}/>
             </Routes>
         </div>
     )
