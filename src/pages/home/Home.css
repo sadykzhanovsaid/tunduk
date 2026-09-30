@@ -27,11 +27,12 @@
 
 .header__name-title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
+    color: #0b182b;
 }
 
 .header__name-arrow {
-    font-size: 18px;
+    font-size: 16px;
     color: #0b60ba;
 }
 
