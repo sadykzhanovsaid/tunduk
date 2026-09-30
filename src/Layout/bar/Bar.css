@@ -32,7 +32,7 @@
 
     & > svg {
         color: #465463;
-        font-size: 22px;
+        font-size: 24px;
     }
 
     &.active > .bar__title {
