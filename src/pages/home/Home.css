@@ -44,7 +44,7 @@
     align-items: center;
     gap: 15px;
 
-    border-radius: 14px;
+    border-radius: 8px;
     background-color: white;
 }
 
@@ -54,6 +54,6 @@
 }
 
 .header__question {
-    font-size: 22px;
+    font-size: 20px;
     color: #0b60ba;
 }
