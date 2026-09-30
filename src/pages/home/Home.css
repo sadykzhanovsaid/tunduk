@@ -22,7 +22,7 @@
 .header__name {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .header__name-title {
@@ -34,6 +34,8 @@
 .header__name-arrow {
     font-size: 16px;
     color: #0b60ba;
+
+    transform: translateY(-1px);
 }
 
 .header__notifications {
