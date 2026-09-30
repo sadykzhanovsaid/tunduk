@@ -30,6 +30,14 @@ body.is-webapp .application {
     padding: 60px 0;
 }
 
+.application {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (min-width: 480px) {
     .application {
         display: none;
