@@ -44,7 +44,7 @@ body.is-webapp .application {
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 480px) {
+@media screen and (orientation: landscape) and (min-width: 480px) {
     html, body {
         width: 100vh !important;
         height: 100vw !important;
