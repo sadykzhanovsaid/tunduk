@@ -25,11 +25,11 @@
 body {
 
     &.app {
-        background-color: #d7e9fd;
+        background-color: #cde6fd;
     }
 
     &.authentication {
-        background-color: #cde6fd;
+        background-color: #d7e9fd;
     }
 }
 
