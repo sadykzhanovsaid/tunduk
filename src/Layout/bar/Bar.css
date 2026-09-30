@@ -15,7 +15,8 @@
     justify-content: space-between;
 
     border-radius: 26px;
-    border: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
     background-color: white;
     box-shadow: 0 8px 24px rgba(11, 96, 186, 0.2);
 }
