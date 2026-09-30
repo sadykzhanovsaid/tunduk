@@ -42,18 +42,18 @@
     padding: 6px 8px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 
     border-radius: 14px;
     background-color: white;
 }
 
 .header__notification {
-    font-size: 24px;
+    font-size: 22px;
     color: #0b60ba;
 }
 
 .header__question {
-    font-size: 24px;
+    font-size: 22px;
     color: #0b60ba;
 }
