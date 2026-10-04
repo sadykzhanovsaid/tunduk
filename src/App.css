@@ -25,11 +25,11 @@
 body {
 
     &.app {
-        background: linear-gradient(180deg, #D8E8FC, #EBF3FE 100%);
+        background: white;
     }
 
     &.authentication {
-        background: linear-gradient(180deg, #D8E8FC, #EBF3FE 100%);
+        background: orange;
     }
 }
 
