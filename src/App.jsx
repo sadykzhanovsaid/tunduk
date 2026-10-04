@@ -8,7 +8,6 @@ import Authentication from "./pages/authentication/Authentication.jsx"
 
 function App() {
     const location = useLocation()
-    const [currentPage, setCurrentPage] = useState(location.pathname)
     const [isAuthenticated, setIsAuthenticated] = useState(() => {
         return sessionStorage.getItem("isAuthenticated") === "true"
     })
@@ -24,10 +23,6 @@ function App() {
             document.body.classList.remove("authentication")
         }
     }, [isAuthenticated, location.pathname])
-
-    useEffect(() => {
-        setCurrentPage(location.pathname)
-    }, [location.pathname])
 
     useEffect(() => {
         const isStandalone = window.matchMedia("(display-mode: standalone)").matches ||
@@ -55,12 +50,9 @@ function App() {
 
                 <Route
                     path="/"
-                    element={isAuthenticated ? <Layout currentPage={currentPage} setCurrentPage={setCurrentPage}/> : <Navigate to="/lock" replace/>}
+                    element={isAuthenticated ? <Layout/> : <Navigate to="/lock" replace/>}
                 >
                     <Route index element={<Home/>}/>
-                    <Route path="/document" element={<p>document</p>}/>
-                    <Route path="/services" element={<p>services</p>}/>
-                    <Route path="/user" element={<p>user</p>}/>
                 </Route>
 
                 <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/lock"} replace/>}/>
