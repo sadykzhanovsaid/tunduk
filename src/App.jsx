@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import "./App.css"
 import {Navigate, Route, Routes, useLocation} from "react-router-dom"
 
-import Layout from "./Layout/Layout.jsx"
+import Layout from "./layout/Layout.jsx"
 import Home from "./pages/home/Home.jsx"
 import Authentication from "./pages/authentication/Authentication.jsx"
 

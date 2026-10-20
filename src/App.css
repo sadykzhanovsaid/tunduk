@@ -25,11 +25,21 @@
 body {
 
     &.app {
-        background: white;
+        background: linear-gradient(
+                180deg,
+                #BEDCFC 0%,
+                #C8E2FC 50%,
+                #D5E9FC 100%
+        );
     }
 
     &.authentication {
-        background: orange;
+        background: linear-gradient(
+                180deg,
+                #BEDCFC 0%,
+                #C8E2FC 50%,
+                #D5E9FC 100%
+        );
     }
 }
 
